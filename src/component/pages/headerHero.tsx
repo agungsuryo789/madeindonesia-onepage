@@ -6,8 +6,8 @@ import imagecity from "@assets/imagekota.png";
 
 const HeaderHero = () => {
   return (
-    <div className="grid grid-cols-5 grid-rows-5 px-4">
-      <div className="content-center col-span-5 lg:col-span-3 row-span-3 my-10 xl:my-2 text-black">
+    <div className="grid grid-cols-5 grid-rows-1 lg:grid-rows-2 px-4">
+      <div className="content-center col-span-5 lg:col-span-3 row-span-1 my-10 xl:my-2 text-black">
         <h3 className="my-4 font-bold text-6xl">
           Let's Find The Most{" "}
           <span className="p-0 font-bold text-6xl text-blue-400">
@@ -40,8 +40,8 @@ const HeaderHero = () => {
           </li>
         </ul>
       </div>
-      <div className="lg:block relative hidden col-span-2 row-span-2">
-        <img src={imagecity} alt="image of map" className="w-fit h-auto" />
+      <div className="lg:block relative -z-10 hidden col-span-2 row-span-2">
+        <img src={imagecity} alt="image of map" className="w-full h-fit" />
         <div className="top-1/3 left-1/4 absolute">
           <PopUpLocation />
         </div>

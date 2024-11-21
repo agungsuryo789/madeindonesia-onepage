@@ -1,0 +1,31 @@
+.bg-footer-top {
+  position: relative;
+  background-image: url("../../assets/imagefooter.png");
+  background-size: cover;
+  background-position: center;
+}
+/* .bg-footer-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40%; 
+  background-color: white;
+  z-index: 1; 
+} */
+.footer-text {
+  position: relative;
+  z-index: 2;
+  /* color: transparent; */
+}
+.footer-text ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  background-color: white;
+  z-index: -1;
+}

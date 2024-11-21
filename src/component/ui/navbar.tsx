@@ -2,7 +2,7 @@ import logo from "@assets/Icon Logo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="flex md:flex-row flex-col justify-between bg-white shadow-md px-2 py-2 xl:py-8 w-full text-gray-800">
+    <nav className="z-50 flex md:flex-row flex-col justify-between bg-white shadow-md px-2 py-2 xl:py-8 w-full text-gray-800">
       <div className="flex flex-row gap-2 mx-auto md:mx-2 xl:mx-4 my-4 xl:my-0 text-xl">
         <img src={logo} alt="logo properly" className="my-auto h-8" />
 		<p className="my-auto p-0 font-semibold text-xl">Properly.</p>

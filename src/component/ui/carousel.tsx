@@ -14,16 +14,16 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
       const { offsetWidth, scrollLeft, scrollWidth } = carouselRef.current;
 
       carouselRef.current.scrollBy({
-        left: offsetWidth + 100,
+        left: offsetWidth,
         behavior: "smooth",
       });
 
-      if (scrollLeft + offsetWidth >= scrollWidth - offsetWidth) {
-        carouselRef.current.scrollTo({
-          left: 0,
-          behavior: "smooth",
-        });
-      }
+      //   if (scrollLeft + offsetWidth >=  offsetWidth ) {
+      //     carouselRef.current.scrollTo({
+      //       left: 0,
+      //       behavior: "smooth",
+      //     });
+      //   }
     }
   };
 
